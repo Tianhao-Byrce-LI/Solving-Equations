@@ -1,0 +1,6 @@
+
+import sympy   # 引入解方程的专业模块sympy
+from sympy import log
+x = sympy.symbols("x")   # 申明未知数"x"
+a = sympy.solve([0.5*log(x+10000)+0.5*log(9900)-log(10000)],[x])   # 写入需要解的方程体
+print(a)  
